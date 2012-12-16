@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: MediaCreeper
-Author URI: http://github.com/mediacreeper
-Plugin URI: http://github.com/mediacreeper/mediacreeper
+Author URI: http://mediacreeper.github.com/mediacreeper/
+Plugin URI: http://wordpress.org/extend/plugins/mediacreeper/
 Description: MediaCreeper.com statistics inside Wordpress admin
 Version: 1.0
-Author: Martin Alice
+Author: Martin Alice <mediacreeper.wordpress [at] gmail.com>
 
 Requires Wordpress 2.8 or later
 

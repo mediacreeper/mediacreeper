@@ -17,7 +17,10 @@ from MediaCreeper.com. Visits are visualized inside the admin area with
 a graph in the Dashboard Widget. Each post gets its own metabox in the
 editor with information about recent visits by media companies to that post.
 
-See [MediaCreeper.com](http://mediacreeper.com) and [MediaCreeper.com API](http://api.mediacreeper.com) for more details.
+See [MediaCreeper.com Wiki](http://mediacreeper.com) and [MediaCreeper.com API page](http://api.mediacreeper.com) for more information
+on the MediaCreeper service.
+
+The MediaCreeper plugin for WordPress is developed on [GitHub.com/mediacreeper](http://mediacreeper.github.com/mediacreeper/).
 
 == Installation ==
 
