@@ -22,7 +22,7 @@ class MediacreeperAPI {
 		if(function_exists('curl_init')) {
 			$this->curl = curl_init();
 			curl_setopt($this->curl, CURLOPT_USERAGENT, self::CLIENT_VERSION);
-			curl_setopt($this->curl, CURLOPT_TIMEOUT, 2);
+			curl_setopt($this->curl, CURLOPT_TIMEOUT, self::API_TIMEOUT);
 			curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($this->curl, CURLOPT_FOLLOWLOCATION, 1);
 			curl_setopt($this->curl, CURLOPT_ENCODING, 'gzip');
