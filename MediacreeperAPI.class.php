@@ -25,6 +25,7 @@ class MediacreeperAPI {
 			curl_setopt($this->curl, CURLOPT_TIMEOUT, 2);
 			curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($this->curl, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($this->curl, CURLOPT_ENCODING, 'gzip');
 		}
 	}
 
