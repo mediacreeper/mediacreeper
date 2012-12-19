@@ -4,7 +4,7 @@ Donate link: http://flattr.com/thing/6589/MediaCreeper
 Tags: mediacreeper, plugin, widget
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,6 +54,13 @@ author at <mediacreeper.wordpress [at] gmail.com>.
 3. Settings panel
 
 == Changelog ==
+
+= 1.2 =
+Version bump to include changes for version 1.1 in Chagelog
+
+= 1.1 =
+Add option to automatically insert MediaCreeper tracking tag in
+the footer of the pages
 
 = 1.0 =
 * First public release (December, 2012)
