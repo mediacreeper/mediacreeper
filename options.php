@@ -92,6 +92,31 @@ if(substr($defaultdomain, 0, 4) === 'www.')
 					</p>
 				</td>
 			</tr>
+			<tr valign="top">
+				<th scope="row">MediaCreeper.com tracker tag</th>
+				<td>
+					<fieldset>
+						<label>
+							<input type="radio"
+								name="<?php echo htmlspecialchars(Mediacreeper::$optionName) ?>[tracker_tag]"
+								value="1"
+								<?php if($options['tracker_tag'] == 1): echo 'checked="checked"'; endif; ?>/>
+							<span>Insert tracker tag in footer</span>
+						</label>
+						<br />
+						<label>
+							<input type="radio"
+								name="<?php echo htmlspecialchars(Mediacreeper::$optionName) ?>[tracker_tag]"
+								value="0"
+								<?php if($options['tracker_tag'] == 0): echo 'checked="checked"'; endif; ?>/>
+							<span>I'll handle this myself</span>
+						</label>
+					</fieldset>
+					<p class="description">
+					Whether or not to let this plugin automatically insert the MediaCreeper.com <a href="http://mediacreeper.com/howto">tracker tag</a> in the footer of the blog's pages. If you already have the tracker tag on your pages, or want to place it elsewhere, select the later option.
+					</p>
+				</td>
+			</tr>
 		</table>
 
 		<p class="submit">

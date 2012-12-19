@@ -124,7 +124,6 @@ class Mediacreeper {
 					'Recent media company visitors - MediaCreeper',
 					array($this, 'renderMetabox'), 'post');
 			}
-
 		}
 
 		$this->log(__FUNCTION__ .': Done');
@@ -390,6 +389,7 @@ class Mediacreeper {
 			'show_metabox'	=> 1,
 			'show_widget'	=> 1,
 			'db_version'	=> 1,
+			'tracker_tag'	=> 1,
 		);
 
 		$opts = get_option(self::$optionName);
@@ -398,6 +398,21 @@ class Mediacreeper {
 			add_option(self::$optionName, $opts, '', 'no' /* don't autoload */);
 			$this->applyOptions($opts);
 			$this->log(__FUNCTION__ .': Default options installed: '. json_encode($opts));
+		}
+		else {
+			$num_opts_updated = 0;
+			foreach($defaults as $key => $value) {
+				if(isset($opts[$key]))
+					continue;
+
+				$opts[$key] = $value;
+				$num_opts_updated++;
+			}
+
+			if($num_opts_updated) {
+				update_option(self::$optionName, $opts);
+				$this->log(__FUNCTION__ .': '. $num_opts_updated .' options updated');
+			}
 		}
 	}
 

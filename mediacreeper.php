@@ -29,6 +29,16 @@ function mediacreeper_cron_wrapper() {
 }
 
 
+add_action('wp_footer', 'mediacreeper_add_tracker_tag');
+function mediacreeper_add_tracker_tag() {
+	$options = get_option(Mediacreeper::$optionName);
+	if($options === FALSE || empty($options['tracker_tag']))
+		return;
+
+	echo '<!-- Begin MediaCreeper tracker code (automatically inserted by MediaCreeper for WordPress)  --><a href="http://mediacreeper.com/latest" title="MediaCreeper"><img src="http://mediacreeper.com/image" alt="" style="width: 80px;height: 15px;border: 0px;"/></a><!-- End MediaCreeper tracker code -->';
+}
+
+
 if(is_admin()) {
 	$MediacreeperPlugin = new Mediacreeper();
 	register_activation_hook(__FILE__, array(&$MediacreeperPlugin, 'activate'));

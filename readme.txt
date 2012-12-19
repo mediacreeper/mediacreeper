@@ -29,6 +29,24 @@ The MediaCreeper plugin for WordPress is developed on [GitHub.com/mediacreeper](
 
 == Frequently Asked Questions ==
 
+= Why doesn't MediaCreeper show any data? =
+
+First, make sure your site has a MediaCreeper tracking tag somewhere in the
+pages.
+Version 1.1 of the MediaCreeper plugin for WordPress includes an option in
+the settings panel to automatically add the tracking tag to the footer of
+your pages.
+Alternatively you can [add the necessary](http://mediacreeper.se/howto) code yourself to your pages.
+
+MediaCreeper only tracks visits from [IP blocks known](http://mediacreeper.se/ipblocks) to belong to media
+companies. If you're not getting any data then that is perhaps because your
+blog isn't attracting any traffic from any of the tracked media companies.
+
+= How do I get new features added? =
+
+If you have a feature suggestions, please feel free to contact the
+author at <mediacreeper.wordpress [at] gmail.com>.
+
 == Screenshots ==
 
 1. Daily visitors visualized as a pie graph in a Dashboard Widget
@@ -44,4 +62,10 @@ The MediaCreeper plugin for WordPress is developed on [GitHub.com/mediacreeper](
 * Initial version (2011, 24HBC)
 
 == Upgrade Notice ==
+
+= 1.1 =
+
+Version 1.1 includes an option to automatically add the MediaCreeper
+tracking tag in the footer of the pages. This setting is available in
+Settings/MediaCreeper menu in WordPress admin.
 
