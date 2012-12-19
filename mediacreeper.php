@@ -4,10 +4,10 @@ Plugin Name: MediaCreeper
 Author URI: http://mediacreeper.github.com/mediacreeper/
 Plugin URI: http://wordpress.org/extend/plugins/mediacreeper/
 Description: MediaCreeper.com statistics inside Wordpress admin
-Version: 1.0
+Version: 1.2
 Author: Martin Alice <mediacreeper.wordpress [at] gmail.com>
 
-Requires Wordpress 2.8 or later
+Requires Wordpress 3.0 or later
 
 */
 
