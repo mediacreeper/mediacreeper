@@ -11,7 +11,7 @@
  *
  */
 class MediacreeperAPI {
-	const CLIENT_VERSION	= 'MediaCreeper_for_WP/mediacreeper-v1.0.zip';
+	const CLIENT_VERSION	= 'MediaCreeper_for_WP/mediacreeper-v1.1.zip';
 	const API_ENDPOINT	= 'http://api.mediacreeper.com/';
 	const API_TIMEOUT	= 2;
 
